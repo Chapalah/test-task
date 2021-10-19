@@ -1,0 +1,17 @@
+.column {
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__btn {
+    cursor: pointer;
+    margin-left: 1em;
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

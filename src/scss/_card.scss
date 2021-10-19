@@ -1,0 +1,108 @@
+.card {
+  width: 282px;
+  height: 405px;
+  background: #ffffff;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.06);
+  border-radius: 2px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+  position: relative;
+
+  @media (min-width: 361px) {
+    &:hover {
+      .hover {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.3s, visibility 0.3s;
+      }
+    }
+  }
+
+  &__rectangle {
+    width: 100%;
+    height: 6px;
+    background: #259609;
+    border-radius: 2px 2px 0px 0px;
+  }
+
+  &__emblem {
+    display: flex;
+    justify-content: flex-end;
+    margin: 24px 30px 30px 0;
+  }
+
+  &__add {
+    display: none;
+    border: none;
+    background: none;
+  }
+
+  &__subheader {
+    font-family: "Roboto", serif;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #259609;
+    margin: 0 0 0 30px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 177px;
+    margin-top: 10px;
+  }
+
+  &__info-header {
+    font-family: "Roboto", serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #3e3e3e;
+    margin: 0 0 0 30px;
+  }
+
+  &__info-list {
+    margin-left: 30px;
+  }
+
+  &__info-list-media {
+    display: none;
+  }
+
+  &__info-list-item {
+    display: flex;
+    align-items: center;
+    p {
+      font-family: "Roboto", serif;
+      font-size: 14px;
+      line-height: 16px;
+      margin: 0 0 0 13px;
+      color: #3e3e3e;
+    }
+  }
+
+  .first {
+    margin-bottom: 8px;
+  }
+
+  .second {
+    margin: 0 1.5px 0 2px;
+  }
+
+  &__button {
+    font-family: "Roboto", serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 222px;
+    height: 44px;
+    margin: 30px;
+    background: #259609;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+}

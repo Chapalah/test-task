@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import "_vars";
+@import "_header";
+@import "_menu";
+@import "_media";
+@import "_cards";
+@import "_card";
+@import "_card-hover";
+@import "_subnav";
+@import "_navigation";
+@import "_column";
+
+body {
+  background: #f7f7f7;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 920px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 23px;
+  margin-left: 14px;
+}
